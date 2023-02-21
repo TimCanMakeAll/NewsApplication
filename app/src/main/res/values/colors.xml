@@ -10,4 +10,9 @@
     <color name="transparent">#0000FFFF</color>
     <color name="underline">#858585</color>
     <color name="statusBarColor">#004D40</color>
+    <color name="lightRed">#F8BBD0</color>
+    <color name="lightGreen">#C8E6C9</color>
+    <color name="lightBlue">#BBDEFB</color>
+    <color name="lightYellow">#F0F4C3</color>
+    <color name="backgroundFragmentColor">#454D4D</color>
 </resources>

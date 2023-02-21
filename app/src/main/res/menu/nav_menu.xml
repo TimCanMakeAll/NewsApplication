@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:id="@+id/nav_account"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="Account edits"/>
+    <group android:checkableBehavior="single">
 
-    <item android:id="@+id/nav_theme_settings"
-        android:icon="@drawable/ic_baseline_color_lens_24"
-        android:title="Thene settings"/>
+        <item android:id="@+id/host_fragment"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Host fragment"/>
 
-    <item android:id="@+id/nav_saved_items"
-        android:icon="@drawable/ic_baseline_galery_24"
-        android:title="Saved items"/>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Account edits" />
+
+        <item
+            android:id="@+id/nav_theme_settings"
+            android:icon="@drawable/ic_baseline_color_lens_24"
+            android:title="Theme settings" />
+
+        <item
+            android:id="@+id/nav_saved_items"
+            android:icon="@drawable/ic_baseline_galery_24"
+            android:title="Saved items" />
+    </group>
 </menu>
