@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    app:cardElevation="2dp"
+    android:layout_marginVertical="10dp"
+    android:backgroundTint="@color/butter"
     app:cardCornerRadius="12.5dp"
-    android:layout_marginVertical="10dp">
+    app:cardElevation="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,64 +23,44 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+        <TextView
+            android:id="@+id/news_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:elevation="0dp"
-            android:outlineSpotShadowColor="@color/transparent"
-            android:outlineAmbientShadowColor="@color/transparent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Ferrari"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/news_image_main"
-            app:layout_constraintTop_toTopOf="@+id/news_image_main">
+            app:layout_constraintTop_toTopOf="@+id/news_image_main" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:elevation="0dp">
-
-                <TextView
-                    android:id="@+id/news_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ferrari"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/dateOfNewsMain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:text="20.02.2023"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/news_image_main"
-                    app:layout_constraintTop_toBottomOf="@+id/shortDescriptionNews_main" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/dateOfNewsMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="2dp"
+            android:text="20.02.2023"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/news_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/news_name"/>
 
         <TextView
             android:id="@+id/shortDescriptionNews_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
             android:layout_marginVertical="5dp"
-            android:layout_marginHorizontal="10dp"
-            android:text="Ferrari introduced a new car"
+            android:text="Ferrari introduced a new..."
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/news_image_main"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/news_image_main"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+            app:layout_constraintStart_toEndOf="@+id/news_image_main"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

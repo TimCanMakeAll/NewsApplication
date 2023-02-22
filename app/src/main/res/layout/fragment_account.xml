@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.AccountFragment"
-    android:background="@color/blue">
+    android:background="@color/darkBlue">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/fr_account_cardView_profileImage"
@@ -16,7 +16,8 @@
         app:cardCornerRadius="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/butter">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -34,6 +35,34 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/butter"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="30dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fr_account_cardView_profileImage"
+        app:layout_constraintStart_toEndOf="@+id/fr_account_cardView_profileImage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fr_account_editProfileImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_baseline_edit_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:clickable="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/fr_account_cardView_logpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +71,8 @@
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fr_account_cardView_profileImage">
+        app:layout_constraintTop_toBottomOf="@+id/fr_account_cardView_profileImage"
+        android:backgroundTint="@color/butter">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -69,7 +99,7 @@
                 android:layout_marginVertical="15dp"
                 android:hint="Enter login"
                 android:textSize="22sp"
-                android:lines="1"
+                android:maxLines="1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fr_account_login_textView" />
@@ -96,7 +126,7 @@
                 android:layout_marginBottom="20dp"
                 android:hint="Enter password"
                 android:textSize="22sp"
-                android:lines="1"
+                android:maxLines="1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -109,11 +139,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
-        android:layout_marginVertical="20dp"
+        android:layout_marginVertical="40dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fr_account_cardView_logpass">
+        app:layout_constraintTop_toBottomOf="@+id/fr_account_cardView_logpass"
+        android:backgroundTint="@color/butter">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

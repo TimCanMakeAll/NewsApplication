@@ -5,8 +5,8 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="underline">#858585</color>
     <color name="statusBarColor">#004D40</color>
@@ -14,9 +14,21 @@
     <color name="green">#A5D6A7</color>
     <color name="blue">#90CAF9</color>
     <color name="yellow">#E6EE9C</color>
-    <color name="backgroundFragmentColor">#454D4D</color>
     <color name="greenAccept">#4CAF50</color>
     <color name="redCancel">#F44336</color>
     <color name="lightTheme">#CDE3F6</color>
     <color name="darkTheme">#3C404E</color>
+    <!-- dark theme !-->
+    <color name="darkBlue">#001427</color>
+    <color name="suede">#708d81</color>
+    <color name="butter">#f4d58d</color>
+    <color name="blood">#bf0603</color>
+    <color name="burgundy">#8d0801</color>
+    <!-- light theme !-->
+    <color name="mint">#84dcc6</color>
+    <color name="lightMint">#a5ffd6</color>
+    <color name="peach">#ff686b</color>
+    <color name="pink">#ffa69e</color>
+    <color name="coldBlue">#C6DDF0</color>
+    <color name="orange">#FF8762</color>
 </resources>
