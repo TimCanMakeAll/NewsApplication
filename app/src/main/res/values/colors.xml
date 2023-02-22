@@ -15,4 +15,6 @@
     <color name="lightBlue">#BBDEFB</color>
     <color name="lightYellow">#F0F4C3</color>
     <color name="backgroundFragmentColor">#454D4D</color>
+    <color name="greenAccept">#4CAF50</color>
+    <color name="redCancel">#F44336</color>
 </resources>
