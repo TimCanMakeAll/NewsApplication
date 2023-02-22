@@ -8,14 +8,12 @@
     tools:context=".Fragments.HostFragment"
     android:background="@color/lightYellow">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Host fragment"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
