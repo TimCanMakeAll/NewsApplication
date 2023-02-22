@@ -1,22 +1,20 @@
 package com.tim.newsapplication.Fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.tim.newsapplication.adapters.RecyclerViewAdapter
+import com.tim.newsapplication.adapters.RecyclerViewAdapterHost
 import com.tim.newsapplication.databinding.FragmentHostBinding
 import com.tim.newsapplication.models.ItemsDataClass
 
 class HostFragment : Fragment() {
 
     private lateinit var binding: FragmentHostBinding
-    lateinit var adapter: RecyclerViewAdapter
+    lateinit var adapter: RecyclerViewAdapterHost
     val data = MutableLiveData<List<ItemsDataClass>>(listOf())
 
     var names = mutableListOf<String>()
@@ -48,7 +46,7 @@ class HostFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(this.context)
         //adapter = RecyclerViewAdapter(names, imageLinks, newsDates, shortDescriptions)
         data.value?.let { addToList(it) }
-        adapter = RecyclerViewAdapter(names, imageLinks, newsDates, shortDescriptions)
+        adapter = RecyclerViewAdapterHost(names, imageLinks, newsDates, shortDescriptions)
         recyclerView.adapter = adapter
 
 //        scrollListener(

@@ -19,7 +19,6 @@
             android:layout_height="80dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="15dp"
-            android:background="@drawable/ic_baseline_home_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
-            android:elevation="10dp"
+            android:elevation="0dp"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/news_image_main"
             app:layout_constraintTop_toTopOf="@+id/news_image_main">
