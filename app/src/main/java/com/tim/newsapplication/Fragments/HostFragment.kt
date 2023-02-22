@@ -15,10 +15,10 @@ class HostFragment : Fragment() {
     private lateinit var binding: FragmentHostBinding
     lateinit var adapter: RecyclerViewAdapter
 
-    private var names = mutableListOf<String>()
-    private var imageLinks = mutableListOf<String>()
-    private var newsDates = mutableListOf<String>()
-    private var shortDescriptions = mutableListOf<String>()
+    var names = mutableListOf<String>()
+    var imageLinks = mutableListOf<String>()
+    var newsDates = mutableListOf<String>()
+    var shortDescriptions = mutableListOf<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +37,7 @@ class HostFragment : Fragment() {
         //get data from viewModel
         //data filling test
         val data = dataSet()
-        data
+        //adapter = RecyclerViewAdapter(names, imageLinks, newsDates, shortDescriptions)
         addToList(data)
         adapter = RecyclerViewAdapter(names, imageLinks, newsDates, shortDescriptions)
         binding.RecyclerViewMain.adapter = adapter
@@ -57,14 +57,12 @@ class HostFragment : Fragment() {
                 "21.02.2023",
                 "test test test test test test tes"))
         }
-
         return list
     }
 
     private fun addToList(itemsDataClassList: List<ItemsDataClass>){
 
-
-        for (i in itemsDataClassList.indices){
+        for (i in 0 .. itemsDataClassList.size - 1 ){
 
             names.add(itemsDataClassList[i].newsName)
             imageLinks.add(itemsDataClassList[i].imageLink)

@@ -18,7 +18,10 @@ class RecyclerViewAdapter(
     inner class ViewHolder(binding: RecyclerViewCardsBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-
+        var itemName = binding.newsName
+        var itemImage = binding.newsImageMain
+        var itemDate = binding.dateOfNewsMain
+        var itemShortDescription = binding.shortDescriptionNewsMain
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,21 +32,24 @@ class RecyclerViewAdapter(
         return ViewHolder(binding)
     }
 
+    override fun getItemCount(): Int {
+        return names.size
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        binding.newsName.text = names[position]
-        binding.newsImageMain.setImageResource(R.drawable.ic_baseline_home_24)
-        binding.dateOfNewsMain.text = newsDates[position]
-
-        binding.shortDescriptionNewsMain.text = shortDescriptions[position]
+        holder.itemName.text = names[position]
+        holder.itemImage.setImageResource(R.drawable.ic_baseline_home_24)
+        holder.itemDate.text = newsDates[position]
+        holder.itemShortDescription.text = shortDescriptions[position]
+//        binding.newsName.text = names[position]
+//        binding.newsImageMain.setImageResource(R.drawable.ic_baseline_home_24)
+//        binding.dateOfNewsMain.text = newsDates[position]
+//        binding.shortDescriptionNewsMain.text = shortDescriptions[position]
 
 //            Picasso.get()
 //                .load(imagesLinks[position])
 //                .fit()
 //                .into(holder.itemImage)
-    }
-
-    override fun getItemCount(): Int {
-        return names.size
     }
 }

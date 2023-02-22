@@ -28,8 +28,8 @@
             android:id="@+id/cardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:elevation="0dp"
             android:layout_marginVertical="5dp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/news_image_main"
             app:layout_constraintTop_toTopOf="@+id/news_image_main">
