@@ -7,14 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="transparent">#0000FFFF</color>
+    <color name="transparent">#00000000</color>
     <color name="underline">#858585</color>
     <color name="statusBarColor">#004D40</color>
-    <color name="lightRed">#F8BBD0</color>
-    <color name="lightGreen">#C8E6C9</color>
-    <color name="lightBlue">#BBDEFB</color>
-    <color name="lightYellow">#F0F4C3</color>
+    <color name="red">#EF9A9A</color>
+    <color name="green">#A5D6A7</color>
+    <color name="blue">#90CAF9</color>
+    <color name="yellow">#E6EE9C</color>
     <color name="backgroundFragmentColor">#454D4D</color>
     <color name="greenAccept">#4CAF50</color>
     <color name="redCancel">#F44336</color>
+    <color name="lightTheme">#CDE3F6</color>
+    <color name="darkTheme">#3C404E</color>
 </resources>

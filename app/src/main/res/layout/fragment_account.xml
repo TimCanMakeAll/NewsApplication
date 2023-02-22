@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.AccountFragment"
-    android:background="@color/lightBlue">
+    android:background="@color/blue">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/fr_account_cardView_profileImage"
