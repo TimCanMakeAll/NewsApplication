@@ -9,7 +9,7 @@ import com.tim.newsapplication.databinding.FragmentAccountBinding
 
 class AccountFragment : Fragment() {
 
-    private lateinit var binding: FragmentAccountBinding
+    lateinit var binding: FragmentAccountBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="activityBgColor" format="color"/>
+    <attr name="cardBgColor" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="applyButtonColor" format="color"/>
+    <attr name="cancelButtonColor" format="color"/>
+    <attr name="themesCardBgColor" format="color"/>
+    <attr name="textOnThemesCard" format="color"/>
+    <attr name="hintColor" format="color"/>
+    <attr name="menuTextImageColor" format="color"/>
+    <attr name="menuBgColor" format="color"/>
+</resources>
