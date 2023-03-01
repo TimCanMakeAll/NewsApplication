@@ -4,9 +4,10 @@
         <item name="colorSecondary">@color/peach</item>
     </style>
 
-    <style name="LightTheme" parent="Theme.NewsApplication">
+    <style name="LightTheme">
         <item name="colorPrimary">@color/darkSuede</item>
         <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/peach</item>
         <item name="android:statusBarColor">@color/suede</item>
         <item name="activityBgColor">@color/coldBlue</item>
         <item name="cardBgColor">@color/white</item>
@@ -20,17 +21,16 @@
         <item name="menuBgColor">@color/white</item>
     </style>
 
-    <style name="DarkTheme" parent="Theme.NewsApplication">
+    <style name="DarkTheme">
         <item name="colorPrimary">@color/burgundy</item>
         <item name="android:textColorPrimary">@color/white</item>
-        <item name="colorSecondary">@color/greenAccept</item>
-        <item name="android:statusBarColor">@color/black</item>
-        <item name="activityBgColor">@color/darkBlue</item>
+        <item name="colorSecondary">@color/darkGreenBlue</item>
+        <item name="android:statusBarColor">@color/black</item>        <item name="activityBgColor">@color/darkBlue</item>
         <item name="cardBgColor">@color/butter</item>
         <item name="textColor">@color/white</item>
         <item name="applyButtonColor">@color/greenAccept</item>
         <item name="cancelButtonColor">@color/redCancel</item>
-        <item name="themesCardBgColor">@color/orangeStrong</item>
+        <item name="themesCardBgColor">@color/burgundyLight</item>
         <item name="textOnThemesCard">@color/white</item>
         <item name="hintColor">#7F7F7F</item>
         <item name="menuTextImageColor">@color/butter</item>

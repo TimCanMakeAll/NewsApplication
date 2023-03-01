@@ -26,6 +26,7 @@
     <color name="butterStrong">#B18E3B</color>
     <color name="blood">#bf0603</color>
     <color name="burgundy">#8d0801</color>
+    <color name="darkGreenBlue">#006064</color>
     <!-- light theme !-->
     <color name="mint">#84dcc6</color>
     <color name="lightMint">#a5ffd6</color>
@@ -33,5 +34,7 @@
     <color name="pink">#ffa69e</color>
     <color name="coldBlue">#C6DDF0</color>
     <color name="orange">#FF8762</color>
-    <color name="orangeStrong">#AC4728</color>
+    <color name="burgundyLight">#C13E3E</color>
+    <!-- hui !-->
+    <color name="test">#3d405b</color>
 </resources>

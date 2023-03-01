@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="No Name User"
-        android:textColor="?attr/menuTextImageColor"
+        android:textColor="@color/white"
         android:textSize="22sp"/>
 
     <View

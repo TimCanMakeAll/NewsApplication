@@ -1,6 +1,8 @@
 package com.tim.newsapplication
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -18,13 +20,15 @@ open class MainActivity : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
 
+    private val accountFragment = AccountFragment()
+    private var themeSettingsFragment = ThemeSettingsFragment(false)
+    private val savedItemsFragment = SavedItemsFragment()
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setTheme(R.style.LightTheme)
-
-        //setAppTheme("Dark")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
@@ -42,9 +46,6 @@ open class MainActivity : AppCompatActivity() {
 
         makeCurrentFragment(hostFragment, "Host Fragment")
 
-        val accountFragment = AccountFragment()
-        val themeSettingsFragment = ThemeSettingsFragment()
-        val savedItemsFragment = SavedItemsFragment()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -84,12 +85,17 @@ open class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    @SuppressLint("ResourceAsColor")
     fun setAppTheme(string: String) {
 
         if (string == "Dark") {
-            setTheme(R.style.DarkTheme)
-        } else {
-            setTheme(R.style.LightTheme)
+            supportActionBar!!.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.burgundy)))
+            themeSettingsFragment = ThemeSettingsFragment(true)
+            makeCurrentFragment(themeSettingsFragment, "Theme Settings")
+        } else if (string == "Light") {
+            supportActionBar!!.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.darkSuede)))
+            themeSettingsFragment = ThemeSettingsFragment(false)
+            makeCurrentFragment(themeSettingsFragment, "Theme Settings")
         }
     }
 }
